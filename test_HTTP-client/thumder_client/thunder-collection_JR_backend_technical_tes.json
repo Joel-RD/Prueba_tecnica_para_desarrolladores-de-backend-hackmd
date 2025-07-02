@@ -1,0 +1,153 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "JR_backend_technical_tes",
+    "collectionId": "6b730435-7724-458e-b8af-806deef22975",
+    "dateExported": "2025-05-09T12:49:44.839Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c9db0e9e-e133-4b93-9f98-79e40d61319a",
+            "colId": "6b730435-7724-458e-b8af-806deef22975",
+            "containerId": "",
+            "name": "GeUserById",
+            "url": "http://localhost:7621/api/v1/users/2",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-05-09T12:45:47.701Z",
+            "modified": "2025-05-09T12:45:47.701Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "Juan"
+            }
+        },
+        {
+            "_id": "82d3b9be-299b-44cb-b074-56b7d871ebba",
+            "colId": "6b730435-7724-458e-b8af-806deef22975",
+            "containerId": "",
+            "name": "GeUserById",
+            "url": "http://localhost:7621/api/v1/users/2",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2025-05-09T12:46:11.361Z",
+            "modified": "2025-05-09T12:46:11.361Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "Juan"
+            }
+        },
+        {
+            "_id": "19d8ef11-32ca-451d-941e-bfd52060d95f",
+            "colId": "6b730435-7724-458e-b8af-806deef22975",
+            "containerId": "",
+            "name": "GetAllUsers",
+            "url": "http://localhost:7621/api/v1/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-05-09T12:46:23.009Z",
+            "modified": "2025-05-09T12:46:23.009Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ]
+        },
+        {
+            "_id": "0f17e79d-da74-4a0b-9354-c081d517a434",
+            "colId": "6b730435-7724-458e-b8af-806deef22975",
+            "containerId": "",
+            "name": "DeleteUser",
+            "url": "DeleteUser",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2025-05-09T12:46:31.831Z",
+            "modified": "2025-05-09T12:46:31.831Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ]
+        },
+        {
+            "_id": "095b0746-505d-467f-abd8-3b8bb546163d",
+            "colId": "6b730435-7724-458e-b8af-806deef22975",
+            "containerId": "",
+            "name": "Delete",
+            "url": "http://localhost:7621/api/v1/users/3",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2025-05-09T12:46:47.291Z",
+            "modified": "2025-05-09T12:46:47.291Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\":\"Eudy\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "39956797-9504-4114-8071-b0f85b0051b4",
+            "colId": "6b730435-7724-458e-b8af-806deef22975",
+            "containerId": "",
+            "name": "CreateUser",
+            "url": "http://localhost:7621/api/v1/users",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2025-05-09T12:46:54.512Z",
+            "modified": "2025-05-09T12:46:54.512Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"first_name\": \"Pablo\",\n  \"last_name\": \"Martinez\",\n  \"date_birth\": 12022025,\n  \"mobile_phone\": \"820-2121-2321\",\n  \"email\": \"pablo@example.com\",\n  \"password\": \"pablo12\",\n  \"address\": \"street av1 call7\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d48b68ee-a488-4bf2-b1fb-5e1dd81ad0e1",
+            "colId": "6b730435-7724-458e-b8af-806deef22975",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:7621/api/v1/users/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2025-05-09T12:47:00.407Z",
+            "modified": "2025-05-09T12:47:00.407Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"mobile_phone\": 1234567890,\n  \"password\": 123456789\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "3EcLlMQRY9L3TU8tj4nvnRL4_ZbTQG67ooUN4H5AD7nyB-FI6GzcfO3OpEDoRbXos_X8-G4Ug79Kp6FI8Ww5ZA"
+}
