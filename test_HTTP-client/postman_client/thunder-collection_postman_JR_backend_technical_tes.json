@@ -161,11 +161,12 @@
             "request": {
                 "method": "POST",
                 "url": {
-                    "raw": "http://localhost:7621/api/v1/users",
+                    "raw": "http://localhost:7621/api/v1/users/signup",
                     "path": [
                         "api",
                         "v1",
-                        "users"
+                        "users",
+                        "signup"
                     ],
                     "protocol": "http",
                     "host": [
@@ -186,7 +187,7 @@
                             "language": "json"
                         }
                     },
-                    "raw": "{\n  \"first_name\": \"Pablo\",\n  \"last_name\": \"Martinez\",\n  \"date_birth\": 12022025,\n  \"mobile_phone\": \"820-2121-2321\",\n  \"email\": \"pablo@example.com\",\n  \"password\": \"pablo12\",\n  \"address\": \"street av1 call7\"\n}"
+                    "raw": "{\n  \"first_name\": \"Pablo\",\n  \"last_name\": \"Martinez\",\n  \"date_birth\": \"1990-01-01\",\n  \"mobile_phone\": \"820-2121-2321\",\n  \"email\": \"pablo@example.com\",\n  \"password\": \"pablo12\",\n  \"address\": \"street av1 call7\"\n}"
                 }
             }
         },

@@ -13,19 +13,33 @@ declare global {
     }
 }
 
-export const validationToken = (req: Request, res: Response, next: NextFunction): Promise<void> => {
+const getTokenFromRequest = (req: Request): string | null => {
+    const cookieToken = req.cookies?.access_token;
+    if (cookieToken) return cookieToken;
+
+    const authorization = req.headers.authorization;
+    if (authorization?.startsWith('Bearer ')) {
+        return authorization.slice('Bearer '.length).trim() || null;
+    }
+
+    return null;
+};
+
+export const validationToken = (req: Request, res: Response, next: NextFunction): void => {
     try {
-        const token = req.cookies.access_token;
+        const token = getTokenFromRequest(req);
         if (!token) {
-            res.status(401).json({ message: 'Not token access valid...' });
+            res.status(401).json({ message: 'No se proporcionó un token de acceso válido.' });
             return;
-        };
-        const decode = jwt.verify(token, SECRET_ACCESS_TOKEN)
+        }
+
+        const decode = jwt.verify(token, SECRET_ACCESS_TOKEN);
         req.session = decode;
         res.locals.user = decode;
 
-        next()
+        next();
     } catch (error) {
         console.log(error);
+        res.status(401).json({ message: 'Token de acceso inválido o expirado.' });
     }
 }
