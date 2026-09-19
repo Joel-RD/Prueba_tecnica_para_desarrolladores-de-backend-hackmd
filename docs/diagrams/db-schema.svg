@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><svg viewBox="0 0 960 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="db-schema-title db-schema-desc">
+      <title id="db-schema-title">Esquema físico de la tabla users</title>
+      <desc id="db-schema-desc">Esquema físico de PostgreSQL de la tabla public.users con sus columnas, tipos SQL, restricciones PK, UQ y NN, y los índices únicos generados para mobile_phone y email.</desc>
+      <defs>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;family=Noto+Sans+KR:wght@400;500;600&amp;family=Noto+Serif+KR:wght@400&amp;family=Noto+Sans+TC:wght@400;500;600&amp;family=Noto+Serif+TC:wght@400&amp;display=swap');</style>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4f5d75"/></marker>
+        <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#eb6c36"/></marker>
+        <marker id="arrow-link" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#2e5aa8"/></marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#f5f5f5"/>
+
+      <rect x="320" y="96" width="320" height="304" rx="6" fill="#f5f5f5"/>
+      <rect x="320" y="96" width="320" height="304" rx="6" fill="#ffffff" stroke="#2d3142" stroke-opacity="0.40" stroke-width="1"/>
+      <rect x="336" y="104" width="36" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.50" stroke-width="0.8"/>
+      <text x="354" y="113" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">TABLE</text>
+      <text x="384" y="116" fill="#2d3142" font-size="12" font-weight="600" font-family="'Geist', sans-serif">public.users</text>
+
+      <line x1="328" y1="136" x2="632" y2="136" stroke="#2d3142" stroke-opacity="0.12" stroke-width="1"/>
+
+      <rect x="328" y="160" width="304" height="24" fill="#2d3142" fill-opacity="0.02"/>
+      <rect x="328" y="208" width="304" height="24" fill="#2d3142" fill-opacity="0.02"/>
+      <rect x="328" y="256" width="304" height="24" fill="#2d3142" fill-opacity="0.02"/>
+      <rect x="328" y="304" width="304" height="24" fill="#2d3142" fill-opacity="0.02"/>
+
+      <text x="336" y="153" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">id</text>
+      <text x="624" y="153" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">serial</text>
+      <rect x="356" y="143" width="28" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.60" stroke-width="0.8"/>
+      <text x="370" y="152" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">PK</text>
+
+      <text x="336" y="177" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">first_name</text>
+      <text x="624" y="177" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">varchar(50)</text>
+
+      <text x="336" y="201" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">last_name</text>
+      <text x="624" y="201" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">varchar(50)</text>
+
+      <text x="336" y="225" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">date_birth</text>
+      <text x="624" y="225" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">date</text>
+
+      <text x="336" y="249" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">token</text>
+      <text x="624" y="249" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">varchar(255)</text>
+
+      <text x="336" y="273" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">password</text>
+      <text x="624" y="273" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">varchar(120)</text>
+      <rect x="392" y="263" width="28" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.60" stroke-width="0.8"/>
+      <text x="406" y="272" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">NN</text>
+
+      <text x="336" y="297" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">mobile_phone</text>
+      <text x="624" y="297" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">varchar(20)</text>
+      <rect x="420" y="287" width="28" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.60" stroke-width="0.8"/>
+      <text x="434" y="296" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">UQ</text>
+
+      <text x="336" y="321" fill="#2d3142" font-size="12" font-family="'Geist', sans-serif">email</text>
+      <text x="624" y="321" fill="#4f5d75" font-size="9" font-family="'Geist Mono', monospace" text-anchor="end">varchar(65)</text>
+      <rect x="376" y="311" width="28" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.60" stroke-width="0.8"/>
+      <text x="390" y="320" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">UQ</text>
+
+      <text x="480" y="345" fill="#7a8399" font-size="9" font-family="'Geist Mono', monospace" text-anchor="middle">+ 1 more column · address</text>
+
+      <line x1="328" y1="352" x2="632" y2="352" stroke="#2d3142" stroke-opacity="0.12" stroke-width="1"/>
+      <text x="336" y="372" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" letter-spacing="0.14em">INDEXES</text>
+      <text x="336" y="392" fill="#7a8399" font-size="9" font-family="'Geist Mono', monospace">users_mobile_phone_key · users_email_key</text>
+
+      <line x1="40" y1="548" x2="920" y2="548" stroke="#2d3142" stroke-opacity="0.10" stroke-width="0.8"/>
+      <text x="40" y="564" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.14em">LEGEND</text>
+
+      <rect x="124" y="550" width="28" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.60" stroke-width="0.8"/>
+      <text x="138" y="559" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">PK</text>
+      <text x="160" y="564" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">PRIMARY KEY</text>
+
+      <rect x="316" y="550" width="28" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.60" stroke-width="0.8"/>
+      <text x="330" y="559" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">UQ</text>
+      <text x="352" y="564" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">UNIQUE</text>
+
+      <rect x="472" y="550" width="28" height="12" rx="2" fill="none" stroke="#4f5d75" stroke-opacity="0.60" stroke-width="0.8"/>
+      <text x="486" y="559" fill="#4f5d75" font-size="7" font-family="'Geist Mono', monospace" text-anchor="middle" letter-spacing="0.08em">NN</text>
+      <text x="508" y="564" fill="#4f5d75" font-size="8" font-family="'Geist Mono', monospace" letter-spacing="0.06em">NOT NULL</text>
+    </svg>
